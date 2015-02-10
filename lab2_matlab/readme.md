@@ -81,12 +81,12 @@ The [imread](http://www.mathworks.com/help/matlab/ref/imread.html) command is us
     
     What is the dimension of the output?
 
-    >   Answer
+    > 256x256
 
 3.  Read the ``4.2.03`` image
     What is the dimension of the output?
 
-    >   Answer
+    > 512x512x3
 
 ## Displaying Images
 
@@ -99,7 +99,7 @@ The following commands can be used for displaying images
 2.  Try displaying the images read in the previous point using both commands
 3.  What are the differences?
 
-    >   Answer
+    >  image muestra coordenadas y el otro solo muestra la imagen
 
 ## Writing Images
 
@@ -110,7 +110,9 @@ The [imwrite](http://www.mathworks.com/help/matlab/ref/imwrite.html) image is us
 3.  Write a matlab function that takes the path of an image and converts it to jpg
 
 ## Matlab and the shell
-
+im1=imread('4.2.03.tiff');
+imwrite(im1,'4.2.03.png');
+imwrite(im1,'4.2.03.jpg');
 ### Shell from Matlab
 
 It is possible to excecute bash commands from matlab by using the [system](http://www.mathworks.com/help/matlab/ref/system.html) command
