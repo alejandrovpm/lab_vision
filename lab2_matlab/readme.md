@@ -305,13 +305,13 @@ The [norm2corrx](http://www.mathworks.com/help/images/ref/normxcorr2.htm) can be
     ```
 6.  Explain what the above code does
 
-    > Answer
+    > Answer Se combierte la imagen original en escala de grises y se guarda en la componente Y de el espacio Ycbcr en el espacio cr se guardan las intensidades que muestran donde la cros - correlacion entre la mascara y la imagen toman su valor máximo es decir donde se encontro la mayor coincidencia entre la mascara y la imagen los valores rosados corresponden a los puntos máximos
     
 7.  Now lets find the train in the next frame, read image ``motion05.512.tiff``.
 8.  Apply the procedure written above to it (use the train template from the past frame)
 9.  What are the limitations of this method?
 
-    > Answer
+    > Answer El punto de mayor intensidad en la cross - correlacion vuelve a coincidir en el centro del tren mostrando que el metodo funcióna. Sin embargo si se llega a cambiar el tamaño de la imagen probablemente el metodo encontrá ciertas limitaciones. Por otro lado es necesario saber de antemano cual es la figura que se desea encontrar
 
 See [here](http://www.mathworks.com/help/images/examples/registering-an-image-using-normalized-cross-correlation.html)
 another example.
