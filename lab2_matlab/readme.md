@@ -81,12 +81,12 @@ The [imread](http://www.mathworks.com/help/matlab/ref/imread.html) command is us
     
     What is the dimension of the output?
 
-    > 256x256
+    > Dimensión:2 Tamaño:256x256
 
 3.  Read the ``4.2.03`` image
     What is the dimension of the output?
 
-    > 512x512x3
+    > Dimensión:3 Tamaño:512x512x3
 
 ## Displaying Images
 
@@ -99,7 +99,7 @@ The following commands can be used for displaying images
 2.  Try displaying the images read in the previous point using both commands
 3.  What are the differences?
 
-    >  image muestra coordenadas y el otro solo muestra la imagen
+    >  image muestra coordenadas, Imshow solo muestra la imagen
 
 ## Writing Images
 
@@ -152,7 +152,7 @@ We can do this to simulate difficult capture conditions, and evaluate the algori
 2.  Try the diffente noise types, and save the noisy images to the repository (5 images)
 3.  Try saving noisy images as jpg, what happens?
 
-    > Answer
+    > Answer La imagen pierde intensidad y saturacion en los col
 
 ### Median filter
 
@@ -166,7 +166,7 @@ These filters can be applied to a an image in order to remove noise.
 3.  Try different sizes for the filters
 4.  Which filter works best for salt & pepper noise?
 
-    > Answer
+    > Answer Median filter
 
 For more on noise removal read http://www.mathworks.com/help/images/noise-removal.html
 
@@ -179,7 +179,7 @@ which can be otained from [fspecial](http://www.mathworks.com/help/images/ref/fs
 2.  Try different sizes for the filters
 3.  What differences do you notice?
 
-    > Answer
+    > el average vuelve mas borrosa la imagen, suaviza mucho mas la imagen pasando menos frecuencias altas
 
 ### Sharpen
 
@@ -187,11 +187,11 @@ The [imsharpen](http://www.mathworks.com/help/images/ref/imsharpen.html) functio
 
 1.  Sharp the ``5.1.12`` image. What do you notice?
 
-    > Answer
+    > Answer Realza el contraste entre las altas intensidades y las bajas
 
 2.  Sharp a blurred image. What do you notice?
 
-    > Answer
+    > Answer Realza mucho el contraste quita el efecto blur
 
 ### Edge detection
 
@@ -206,7 +206,7 @@ Notice that the last two filters detect horizontal edges, in order to detect ver
 1.  Try applying this filters
 2.  What is the difference between prewitt and sobel?
 
-    > Answer
+    > Teniendo el mismo nivel de umbralización el prewitt suprime mas información
 
 More sophisticated methods for finding edges can be found in the following pages
     -   http://www.mathworks.com/discovery/edge-detection.html
@@ -248,7 +248,7 @@ color spaces.
     ```
 5.  Transform the image to the following color spaces and repeat the exercise
     -   ycbcr
-    -   lab
+************    -   lab
     -   hsv (use [rgb2hsv](http://www.mathworks.com/help/matlab/ref/rgb2hsv.html))
 
 6.  Save all the mosaics in your github repository
@@ -261,11 +261,11 @@ The [impyramid](http://www.mathworks.com/help/images/ref/impyramid.html) functio
 2.  Create a four level pyramid from the ``5.1.12`` clock  image
 3.  At what level does the people in the picture dissappear?
 
-    >   Answer
+    >   Answer: 3
     
 4.  At what level does the numbers in the clock disappear?
 
-    >   Answer
+    >   Answer: 3
 
 ## Template Matching
 
